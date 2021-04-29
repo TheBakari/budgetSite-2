@@ -1,0 +1,4 @@
+19.04.2021 17:01:55-Korisnik sa IP adrese - ::1 je dobio zabranu na 1 minut
+19.04.2021 17:01:26-Korisnik sa IP adrese - ::1 je dobio zabranu na 1 minut
+15.04.2021 20:40:14-Korisnik sa IP adrese - ::1 je dobio zabranu na 1 minut
+15.04.2021 20:40:10-Korisnik sa IP adrese - ::1 je dobio zabranu na 1 minut

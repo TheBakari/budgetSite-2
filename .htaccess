@@ -1,0 +1,64 @@
+
+
+#ErrorDocument varijante prikazivanja sopstvenih stranica za greške
+
+ErrorDocument 404 " Requested page does not exict. Please, return back."
+ErrorDocument 403 " You do not have permission to access this file. Please, return back."
+ErrorDocument 401 "Enter your credential again, There seems to be a problem  "
+
+
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+#NC makes the rule non case sensitive
+#L makes this the last tule that this specific condition will match
+
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+#login.php
+RewriteRule ^login      login.php[NC,L]
+
+#stranica Single recepti.php
+RewriteRule ^recipe=([0-9]+)/?$ single_recipe.php?id=$1 [L,QSA]
+
+
+#Stranica kategorija.php
+RewriteRule ^category=([0-9]+)/?$ recipes.php?category=$1 [L,QSA]
+
+
+
+
+#Page that are single 
+
+#Main page of the site
+RewriteRule ^homepage index.php [NC,L]
+
+
+#Page that let you send question to administrator
+RewriteRule ^contactus contact.php [NC,l]
+
+#Terms&Condition of site
+RewriteRule ^Terms&Condition termsCondition.php [NC,l]
+
+#PrivacyPolicy of the site 
+RewriteRule ^PrivacyPolicy privacyPolicy.php [NC,l]
+
+#Aboutme is the page about creator of the site
+#RewriteRule ^AboutMe  aboutme.php [NC,l] 
+
+#search page
+RewriteRule ^search search.php [NC,l]
+
+
+
+
+
+
+#RewriteRule ^recipes/([0-9a-zA-z_-]+)/([0-9]+) recipes.php?name=$1&id=$2 [NC,L]
+#RewriteRule ^recepti/([^/\.]+)?$ /recipes.php?id=$1 [NC,L]
+
+
+
+

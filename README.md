@@ -9,6 +9,7 @@ Diplomski rad/ Graduate work on ItAcademy.
   <li>Ajax</li>
   <li>Html</li>
   <li>Js</li>
+  <li>Css</li>
   <ul>
 
 

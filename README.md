@@ -10,6 +10,7 @@ Diplomski rad/ Graduate work on ItAcademy.
   <li>Html</li>
   <li>Js</li>
   <li>Css</li>
+  <li>Bootstrap</li>
   <ul>
 
 
